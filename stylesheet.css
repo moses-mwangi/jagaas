@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  position: relative;
+}
 h1 {
   font-size: 26px;
   font-family: sans-serif;
@@ -12,6 +15,7 @@ h1 {
   width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 h1,
 h2,
@@ -22,11 +26,25 @@ h2 {
   font-size: 40px;
   font-family: san;
   margin-bottom: 20px;
+  position: relative;
 }
 h2::first-letter {
   font-size: 50px;
+  background-color: #ffff00;
 }
-p::first-letter {
+h2::after {
+  content: "TOP";
+  background-color: #ff4500;
+  font-size: 16px;
+  padding: 5px 10px;
+  font-weight: bold;
+  display: inline;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+h3 + p::first-line {
+  /* color: #ff4500; */
 }
 h3 {
   font-size: 30px;
@@ -132,4 +150,11 @@ nav a:link {
   margin-right: 30px;
   display: inline-block;
   margin-top: 10px;
+}
+button {
+  font-size: 22px;
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
