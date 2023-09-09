@@ -68,6 +68,36 @@ li {
   font-size: 20px;
   font-family: sans-serif;
 }
+.colour {
+  background-color: #000000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+}
+.colour-black {
+  background-color: #000000;
+}
+
+.colour-blue {
+  background-color: #0000ff;
+}
+
+.colour-red {
+  background-color: #ff0000;
+}
+
+.colour-yellow {
+  background-color: #ffff00;
+}
+
+.colour-green {
+  background-color: #008000;
+}
+
+.colour-brown {
+  background-color: #a52a2a;
+}
+
 /*article header p {
   font-style: italic;
 }*/
