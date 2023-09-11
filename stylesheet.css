@@ -10,9 +10,10 @@ h1 {
   font-family: sans-serif;
   text-transform: uppercase;
   font-style: italic;
+  float: left;
 }
 .container {
-  width: 1280px;
+  width: 1400px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -27,6 +28,14 @@ h2 {
   font-family: san;
   margin-bottom: 20px;
   position: relative;
+}
+nav {
+  float: right;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
 }
 h2::first-letter {
   font-size: 50px;
@@ -43,9 +52,9 @@ h2::after {
   top: -10px;
   right: -25px;
 }
- /* h3 + p::first-line { */
-  /* color: #ff4500; */
-}
+/* h3 + p::first-line { */
+/* color: #ff4500; */
+
 h3 {
   font-size: 30px;
   font-family: sans-serif;
@@ -57,6 +66,7 @@ h4 {
   font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 20px;
 }
 p {
   font-size: 22px;
@@ -80,28 +90,22 @@ li {
 
 .colour-blue {
   background-color: #0000ff;
- 
 }
 
 .colour-red {
   background-color: #ff0000;
- 
 }
-
 
 .colour-yellow {
   background-color: #ffff00;
- 
 }
 
 .colour-green {
   background-color: #008000;
- 
 }
 
 .colour-brown {
   background-color: #a52a2a;
-  
 }
 
 /*article header p {
@@ -123,12 +127,12 @@ li {
 }
 .related-1 {
   list-style: none;
+  margin: 0;
 }
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
 }
 .post-header {
   margin-bottom: 40px;
@@ -193,4 +197,26 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  margin-left: 20px;
+  margin-top: 10px;
+  float: left;
+}
+article {
+  float: left;
+  width: 825px;
+}
+aside {
+  float: right;
+  width: 500px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+#copy {
+  clear: both;
 }
