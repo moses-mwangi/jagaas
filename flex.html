@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .el--1,
+      .el--2,
+      .el--3,
+      .el--4,
+      .el--5,
+      .el--6,
+      .el--7,
+      .el--8 {
+        flex-grow: 1;
+        flex-basis: 200px;
+      }
+      .el--1 {
+        background-color: blueviolet;
+        align-self: flex-start;
+        /* flex-grow: 1; */
+      }
+      .el--2 {
+        background-color: orangered;
+      }
+      .el--3 {
+        background-color: green;
+        order: 2;
+        height: 250px;
+      }
+      .el--4 {
+        background-color: goldenrod;
+      }
+      .el--5 {
+        background-color: palevioletred;
+        order: -1;
+      }
+      .el--6 {
+        background-color: steelblue;
+        align-self: stretch;
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: crimson;
+      }
+      .container {
+        background-color: #ddd;
+        font-size: 34px;
+        font-family: sans-serif;
+        gap: 10px;
+        display: flex;
+        margin: 40px;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el--1">HTML</div>
+      <div class="el--2">and</div>
+      <div class="el--3">CSS</div>
+      <div class="el--4">are</div>
+      <div class="el--5">amaizing</div>
+      <div class="el--6">Language</div>
+      <div class="el--7">to</div>
+      <div class="el--8">Learn</div>
+    </div>
+  </body>
+</html>

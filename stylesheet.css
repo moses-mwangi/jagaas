@@ -79,10 +79,11 @@ li {
   font-family: sans-serif;
 }
 .colour {
-  background-color: #000000;
+ 
   height: 22px;
-  width: 22px;
-  display: inline-block;
+  width: 400px;
+  display: flex;
+  gap: 10px;
 }
 .colour-black {
   background-color: #000000;
@@ -199,24 +200,67 @@ button {
   right: 50px;
 }
 .author-img {
-  float: left;
-  margin-bottom: 20px;
+  /* float: left; */
+  /* margin-bottom: 20px; */
 }
 .author {
+  /* margin-left: 20px; */
+  /* margin-top: 10px; */
+  /* float: left; */
+}
+/* article { */
+  /* float: left; */
+  /* width: 825px; */
+}
+aside { 
+  /* float: right; */
+  /* width: 500px; */
+  /* padding: 50px; */
+ /* /box-sizing: border-box; */
+}
+#copy { 
+  /* clear: both; */
+}
+.main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author{
+  margin: 0;
   margin-left: 20px;
-  margin-top: 10px;
-  float: left;
 }
-article {
-  float: left;
-  width: 825px;
+.related-post{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-aside {
-  float: right;
-  width: 500px;
-  padding: 50px;
-  box-sizing: border-box;
+.related-author{
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
 }
-#copy {
-  clear: both;
+.related-link :link{
+font-style: none;
+font-weight: bold;
+font-size: 16px;
+}
+.row{
+  display: flex;
+   gap: 75px;
+   align-items: flex-start;
+}
+article{
+  flex-basis: 900px;
+  flex: 1;
+ 
+}
+aside{
+  width: 400px;
 }
