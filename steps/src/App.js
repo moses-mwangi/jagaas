@@ -102,7 +102,6 @@ export function Flashcard() {
   function handleClick(id) {
     setSelectedId(id !== selectedId ? id : null);
     console.log(id);
-    console.log(selectedId);
   }
   return (
     <div className="flashcard ">
