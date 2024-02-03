@@ -35,6 +35,7 @@ export default function App() {
           <p className="message">
             Step {step}: {messages[step - 1]}
           </p>
+
           <div className="buttons">
             <button
               className="bn"
@@ -53,5 +54,67 @@ export default function App() {
         </div>
       )}
     </>
+  );
+}
+
+const question = [
+  {
+    id: 3333,
+    question: "what language is react based on",
+    answer: "javascript",
+  },
+  {
+    id: 4444,
+    question: "what is bulding block of react app",
+    answer: "components",
+  },
+  {
+    id: 1111,
+    question: "what is name of syntaxt we use to describe in components",
+    answer: "jsx",
+  },
+  {
+    id: 2222,
+    question: "How to pass data from parent to child",
+    answer: "props",
+  },
+  {
+    id: 5555,
+    question: "what language is react based on",
+    answer: "javascript",
+  },
+  {
+    id: 6666,
+    question: "How to give a component a memory",
+    answer: "useSateHook",
+  },
+  {
+    id: 7777,
+    question:
+      "How do we call an input that is completely synchronized by state",
+    answer: "controlled Element",
+  },
+];
+
+export function Flashcard() {
+  const [selectedId, setSelectedId] = useState(null);
+
+  function handleClick(id) {
+    setSelectedId(id !== selectedId ? id : null);
+  }
+  return (
+    <div className="flashcard ">
+      {question.map((question) => (
+        <div
+          className={question.id === selectedId ? "selected" : ""}
+          key={question.id}
+          onClick={() => handleClick(question.id)}
+        >
+          <p>
+            {question.id === selectedId ? question.answer : question.question}
+          </p>
+        </div>
+      ))}
+    </div>
   );
 }

@@ -1,0 +1,22 @@
+.flashcard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 800px;
+  margin: auto;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.flash {
+  border: 2px solid #333;
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+.selected {
+  background-color: red;
+}
