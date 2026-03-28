@@ -119,8 +119,8 @@ const EntryRequirementsPage = () => {
           transition={{ duration: 0.8 }}
           className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto"
         >
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">Entry Requirements</h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight font-heading text-impact">Entry Requirements</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-body text-readable">
             Everything you need to know about admission requirements at FIBS College
           </p>
         </motion.div>
@@ -138,8 +138,8 @@ const EntryRequirementsPage = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Admission Requirements</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4 font-heading">Admission Requirements</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto font-body text-readable">
                 At FIBS College, we maintain clear and fair admission requirements to ensure all students 
                 can succeed in their chosen programs. Find the specific requirements for your desired course below.
               </p>
@@ -222,7 +222,11 @@ const EntryRequirementsPage = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <AlertCircle className="h-6 w-6 text-blue-600" />
-                <h3 className="text-xl font-bold text-gray-900">Important Notes</h3>
+                <div className="px-5 pt-5 pb-2">
+                  <h3 className="text-sm font-semibold text-indigo-600 uppercase tracking-wider font-heading">
+                    Important Notes
+                  </h3>
+                </div>
               </div>
               
               <ul className="space-y-3 text-gray-700">

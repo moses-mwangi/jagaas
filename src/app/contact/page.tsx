@@ -182,9 +182,11 @@ const ContactPage = () => {
     <div className="min-h-screen">
       {/* Hero Section - More Dynamic */}
       <section className="relative bg-gradient-to-br from-red-600 via-red-700 to-orange-600 py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-grid-white/10"></div>
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-red-900/20 to-orange-600/30 z-10"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+        ></div>
         
         <div className="container mx-auto px-4 relative">
           <motion.div
@@ -194,7 +196,7 @@ const ContactPage = () => {
             className="text-center text-white max-w-3xl mx-auto"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Let's Connect</h1>
-            <p className="text-xl opacity-90 mb-8">
+            <p className="text-xl opacity-100 mb-8">
               Whether you have questions about our programs, need assistance with applications, 
               or want to visit our campus — we're here to help.
             </p>

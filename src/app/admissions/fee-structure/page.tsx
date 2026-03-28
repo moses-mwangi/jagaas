@@ -173,8 +173,8 @@ const FeeStructurePage = () => {
           transition={{ duration: 0.8 }}
           className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto"
         >
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">Fee Structure</h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight font-heading text-impact">Fee Structure</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-body text-readable">
             Comprehensive breakdown of tuition and fees for all programs at FIBS College
           </p>
         </motion.div>
@@ -192,8 +192,8 @@ const FeeStructurePage = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Invest in Your Future</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4 font-heading">Invest in Your Future</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto font-body text-readable">
                 Our fee structure is designed to be transparent and affordable while maintaining 
                 the quality of education and facilities we provide.
               </p>
@@ -208,7 +208,7 @@ const FeeStructurePage = () => {
             >
               <div className="flex items-center gap-3 mb-6">
                 <GraduationCap className="h-6 w-6 text-green-600" />
-                <h3 className="text-2xl font-bold text-gray-900">Certificate Programs</h3>
+                <h3 className="text-2xl font-bold text-gray-900 font-heading">Certificate Programs</h3>
               </div>
               
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">

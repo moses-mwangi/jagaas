@@ -197,8 +197,8 @@ const DeadlinesPage = () => {
           transition={{ duration: 0.8 }}
           className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto"
         >
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">Application Deadlines</h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight font-heading text-impact">Application Deadlines</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-body text-readable">
             Important dates and timelines for admissions at FIBS College
           </p>
         </motion.div>
@@ -219,8 +219,8 @@ const DeadlinesPage = () => {
               <div className="flex items-center gap-3">
                 <Bell className="h-6 w-6 text-blue-600" />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">May Intake 2024 Now Open!</h3>
-                  <p className="text-gray-700">Applications are currently being accepted. Early bird deadline: March 31, 2024</p>
+                  <h3 className="text-lg font-semibold text-gray-900 font-heading">May Intake 2024 Now Open!</h3>
+                  <p className="text-gray-700 font-body text-readable">Applications are currently being accepted. Early bird deadline: March 31, 2024</p>
                 </div>
               </div>
             </motion.div>
